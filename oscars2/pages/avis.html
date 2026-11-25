@@ -1,0 +1,33 @@
+<main>
+  <section>
+    <h2>La vidéo</h2>
+    <video controls width="600">
+      <source src="../video/oscars.mp4" type="video/mp4">
+      <track src="../video/soustitres.vtt" kind="subtitles" srclang="fr" label="Français" default>
+      Votre navigateur ne lit pas la vidéo.
+    </video>
+  </section>
+
+  <section>
+    <h2>Donnez votre avis</h2>
+    <form action="mailto:TON.EMAIL@gmail.com" method="post" enctype="text/plain">
+      <p>
+        <label for="name">Votre nom</label><br>
+        <input type="text" id="name" name="nom" placeholder="Thomas" required>
+      </p>
+      <p>
+        <label for="email">Votre e-mail</label><br>
+        <input type="email" id="email" name="email" placeholder="exemple@mail.fr" required>
+      </p>
+      <p>
+        <label for="note">Note sur 5</label><br>
+        <input type="number" id="note" name="note" min="0" max="5" required>
+      </p>
+      <p>
+        <label for="message">Votre avis</label><br>
+        <textarea id="message" name="avis" rows="5" placeholder="Ce que vous pensez du site" required></textarea>
+      </p>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+</main>
