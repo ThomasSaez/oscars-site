@@ -7,8 +7,24 @@
   <meta name="description" content="Donnez votre avis sur le site des Oscars, lisez ceux des visiteurs et regardez notre vidéo.">
   <meta property="og:title" content="Votre avis sur les Oscars">
   <meta property="og:image" content="../images/oscar.webp">
+  <meta property="og:description" content="DESCRIPTION DE LA PAGE ICI">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../images/favicon.png">
   <link rel="stylesheet" href="../css/style.css" id="theme">
+  <script type="application/ld+json">
+  {
+	"@context": "https://schema.org",
+	"@type": "CollegeOrUniversity",
+	"name": "IUT d'Aix-Marseille, département Informatique",
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "413 avenue Gaston Berger",
+		"postalCode": "13100",
+		"addressLocality": "Aix-en-Provence",
+		"addressCountry": "FR"
+	}
+  }
 </head>
 <body id="top">
 
@@ -26,7 +42,7 @@
   <main>
     <section>
       <h2>La vidéo</h2>
-      <video controls width="600">
+      <video controls width="600" preload="none">
         <source src="../video/video.mp4" type="video/mp4">
         <track src="../video/soustitres.vtt" kind="subtitles" srclang="fr" label="Français" default>
       </video>
