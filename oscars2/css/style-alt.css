@@ -94,3 +94,27 @@ footer a {
     padding: 10px;
   }
 }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Tablette */
+@media (min-width: 601px) and (max-width: 1024px) {
+  main {
+    padding: 15px;
+  }
+  section img {
+    max-width: 250px;
+  }
+}
