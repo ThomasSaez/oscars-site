@@ -1,1 +1,119 @@
-button,header{background:#b00020}button,footer,h1,nav a{color:#fff}footer,header,main,section{padding:20px}*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#fff8f0;color:#222;line-height:1.6}header{text-align:left;position:sticky;top:0;z-index:10}a,h2{color:#b00020}nav a{text-decoration:none;margin:0 10px 0 0;font-weight:700}nav a:hover{text-decoration:underline}main{max-width:900px;margin:0 auto}section{background:#fff;border:2px solid #b00020;border-radius:20px;margin-bottom:20px}img,video{max-width:100%;height:auto}input,textarea{width:100%;padding:8px;border:2px solid #b00020;border-radius:10px}button{border:none;padding:10px 24px;border-radius:20px;cursor:pointer}footer{background:#222;text-align:center}footer a{color:#ffd1d9}@media (max-width:600px){header{position:relative !important;top:auto !important;padding:10px}nav a{display:inline-block;margin:4px 6px 4px 0;font-size:14px}main{padding:10px}}a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:#fff solid 3px;outline-offset:2px}@media (min-width:601px) and (max-width:1024px){main{padding:15px}section img{max-width:250px}}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff8f0;
+  color: #222;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #fff;
+}
+
+h2 {
+  color: #b00020;
+}
+
+header {
+  background: #b00020;
+  text-align: left;
+  padding: 20px;
+}
+
+a {
+  color: #b00020;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px 0 0;
+  font-weight: 700;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  background: #fff;
+  border: 2px solid #b00020;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #b00020;
+  border-radius: 10px;
+}
+
+button {
+  background: #b00020;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #ffd1d9;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: #fff solid 3px;
+  outline-offset: 2px;
+}
+
+/* Téléphone */
+@media (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+  nav a {
+    display: inline-block;
+    margin: 4px 6px 4px 0;
+    font-size: 14px;
+  }
+  main {
+    padding: 10px;
+  }
+}
+
+/* Tablette */
+@media (min-width: 601px) and (max-width: 1024px) {
+  main {
+    padding: 15px;
+  }
+  section img {
+    max-width: 250px;
+  }
+}
